@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bruno Galvagni</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@
 <div class="container">
     <header class="header">
         <h1>Portfólio retrô</h1>
-        <img src="/img/x6.gif" alt="Minha foto retrô em GIF" />
+        <img src="/assets/img/x6.gif" alt="Minha foto retrô em GIF" />
     </header>
 
     <nav class="nav">
@@ -21,21 +21,33 @@
         <a href="projetos.html" rel="noopener noreferrer">Projetos</a> |
         <a href="contato.html" rel="noopener noreferrer">Contato</a> |
         <a href="habilidades.html" rel="noopener noreferrer">Habilidades</a>
-
     </nav>
 
     <main class="content">
         <h2>Bem-vindo ao meu portfólio retrô!</h2>
         <section class="about">
             <h3>👤 Sobre mim</h3>
-            <img src="/img/img90s.png" alt="90sImg" class="profile-pic" />
+            <img src="/assets/img/img90s.png" alt="90sImg" class="profile-pic" />
             <p>Olá! Meu nome é Bruno Galvagni e este é o meu portfólio inspirado nos anos 90!</p>
         </section>
     </main>
+
+    <audio id="musica" loop>
+        <source src="assets/songs/retroSynthwave.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <div class="music-box" onclick="toggleMusic()">
+        ▶
+    </div>
+
     <footer class="footer">
         <p>© 2025 Bruno Galvagni. Todos os direitos reservados.</p>
     </footer>
+
 </div>
+
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>

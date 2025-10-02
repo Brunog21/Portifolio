@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habilidades - Bruno Galvagni</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,14 +12,14 @@
 <div class="container">
     <header class="header">
         <h1>💻 Habilidades</h1>
-        <img src="/img/x6.gif" alt="GIF retrô habilidades" />
+        <img src="/assets/img/x6.gif" alt="GIF retrô habilidades" />
     </header>
 
     <nav class="nav">
-        <a href="index.html">Início</a> |
-        <a href="projetos.html">Projetos</a> |
-        <a href="habilidades.html">Habilidades</a> |
-        <a href="contato.html">Contato</a>
+        <a href="index.html" rel="noopener noreferrer" >Início</a> |
+        <a href="projetos.html" rel="noopener noreferrer">Projetos</a> |
+        <a href="contato.html" rel="noopener noreferrer">Contato</a> |
+        <a href="habilidades.html" rel="noopener noreferrer">Habilidades</a>
     </nav>
 
     <main class="content">
@@ -27,11 +27,21 @@
 
         <section class="skills">
             <ul>
-                <li>💻 Java</li>
-                <li>🌐 JavaScript</li>
-                <li>🐍 Python</li>
-                <li>🎨 CSS</li>
-                <li>🖥 HTML</li>
+                <li>
+                    <img src="assets/img/java.png" alt="Java" style="width: 18px; height: 18px;"> Java
+                </li>
+                <li>
+                    <img src="assets/img/java-script.png" alt="JavaScript" style="width: 18px; height: 18px;"> JavaScript
+                </li>
+                <li>
+                    <img src="assets/img/python.png" alt="Python" style="width: 18px; height: 18px;"> Python
+                </li>
+                <li>
+                    <img src="assets/img/css-3.png" alt="CSS" style="width: 18px; height: 18px;"> CSS
+                </li>
+                <li>
+                    <img src="assets/img/html.png" alt="HTML" style="width: 18px; height: 18px;"> HTML
+                </li>
             </ul>
         </section>
 
@@ -40,16 +50,29 @@
             <ul>
                 <li>Git/GitHub</li>
                 <li>SQL</li>
-                <li>UX/UI Design básico</li>
-                <li>Trabalho em equipe e comunicação</li>
+                <li>Desenvolvimento</li>
+                <li>Automação</li>
+                <li>Desenvolvimento de Processos</li>
             </ul>
         </section>
     </main>
+
+    <audio id="musica" loop>
+        <source src="assets/songs/retroSynthwave.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <div class="music-box" onclick="toggleMusic()">
+        ▶
+    </div>
 
     <footer class="footer">
         <p>© 2025 Bruno Galvagni. Todos os direitos reservados.</p>
     </footer>
 </div>
+
+<script src="/assets/js/main.js"></script>
+
 
 </body>
 </html>
